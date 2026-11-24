@@ -2,6 +2,9 @@
 const express = require('express');
 
 const healthRoutes = require('./routes/healthRoutes');
+const patientRoutes = require('./routes/patientRoutes');
+const doctorRoutes = require('./routes/doctorRoutes');
+
 const notFoundMiddleware = require('./middleware/notFoundMiddleware');
 const errorMiddleware = require('./middleware/errorMiddleware');
 
@@ -18,8 +21,14 @@ app.get('/', (req, res) => {
   });
 });
 
-// Health-check route
+// Health check
 app.use('/api/health', healthRoutes);
+
+// Patient routes
+app.use('/api/patients', patientRoutes);
+
+// Doctor routes
+app.use('/api/doctors', doctorRoutes);
 
 // Handle unknown routes
 app.use(notFoundMiddleware);
