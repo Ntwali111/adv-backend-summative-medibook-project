@@ -1,0 +1,12 @@
+{
+  "title": "Avis sur MediBook",
+  "instructions": "Veuillez partager votre avis sur le système de rendez-vous de la clinique MediBook.",
+  "questions": [
+    "Était-il facile d'utiliser le système de réservation ?",
+    "Qu'avez-vous le plus aimé dans le système ?",
+    "Quels problèmes avez-vous rencontrés en utilisant le système ?",
+    "Comment pouvons-nous améliorer le processus de réservation ?",
+    "Avez-vous d'autres suggestions ou commentaires ?"
+  ],
+  "dateLabel": "Date d'aujourd'hui"
+}

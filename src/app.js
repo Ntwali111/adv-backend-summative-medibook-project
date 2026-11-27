@@ -4,6 +4,9 @@ const express = require('express');
 const healthRoutes = require('./routes/healthRoutes');
 const patientRoutes = require('./routes/patientRoutes');
 const doctorRoutes = require('./routes/doctorRoutes');
+const appointmentRoutes = require('./routes/appointmentRoutes');
+const reportRoutes = require('./routes/reportRoutes');
+const feedbackRoutes = require('./routes/feedbackRoutes');
 
 const notFoundMiddleware = require('./middleware/notFoundMiddleware');
 const errorMiddleware = require('./middleware/errorMiddleware');
@@ -29,6 +32,14 @@ app.use('/api/patients', patientRoutes);
 
 // Doctor routes
 app.use('/api/doctors', doctorRoutes);
+
+// Appointment routes
+app.use('/api/appointments', appointmentRoutes);
+
+//report routes
+app.use('/api/reports', reportRoutes);
+
+app.use('/feedback', feedbackRoutes);
 
 // Handle unknown routes
 app.use(notFoundMiddleware);

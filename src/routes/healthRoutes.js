@@ -5,7 +5,6 @@ const redisClient = require('../config/redis');
 
 const router = express.Router();
 
-// Check whether the API and its services are running
 router.get('/', async (req, res, next) => {
   try {
     await pool.query('SELECT 1');

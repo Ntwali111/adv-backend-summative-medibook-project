@@ -10,7 +10,11 @@ const pool = mysql.createPool({
   database: process.env.DB_NAME,
   waitForConnections: true,
   connectionLimit: 10,
-  queueLimit: 0
+  queueLimit: 0,
+
+  // Keep MySQL DATE and DATETIME values as strings.
+  // This prevents unwanted timezone conversion.
+  dateStrings: true
 });
 
 module.exports = pool;

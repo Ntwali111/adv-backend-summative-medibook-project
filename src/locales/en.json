@@ -1,0 +1,12 @@
+{
+  "title": "MediBook Feedback",
+  "instructions": "Please share your feedback about the MediBook Clinic Appointment System.",
+  "questions": [
+    "How easy was it to use the appointment booking system?",
+    "What did you like most about the system?",
+    "What problems did you experience while using the system?",
+    "How can we improve the appointment booking process?",
+    "Do you have any other suggestions or comments?"
+  ],
+  "dateLabel": "Today's date"
+}
